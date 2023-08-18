@@ -29,7 +29,7 @@ namespace PlayWrightAPI.StepDefinitions
 
             var issues = await _playWrightDriver.ApiRequestContext.GetAsync("/repos/" + Settings.USER + "/" + Settings.REPO + "/git/commits/" + Settings.ENDUSERSHAKEY + "?since=" + Settings.COMMITDATE);
             Assert.True(issues.Ok);
-            //Response obtained from Api
+            //Response obtained from Api test
 
 
             var issuesJsonResponse = await issues.JsonAsync();
